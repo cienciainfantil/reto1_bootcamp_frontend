@@ -1,0 +1,59 @@
+.wave{
+    margin: 0;
+}
+.wave__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:40px;
+    background-image: url("../../assets/img/svg/wave_banner.svg");
+    background-repeat: repeat no-repeat;
+}
+.wave1{
+    animation: animacion1 30s linear infinite;
+    z-index: 10;
+    opacity: 0.8;
+    animation-delay: 0;
+}
+.wave2{
+    animation: animacion1 20s linear infinite;
+    z-index: 9;
+    opacity: 0.7;
+    animation-delay: -5s;
+}
+.wave3{
+    animation: animacion1 10s linear infinite;
+    z-index: 8;
+    opacity: 0.5;
+    animation-delay: -2s;
+    bottom: 10px;
+}
+.wave4{
+    animation: animacion1 15s linear infinite;
+    z-index: 7;
+    opacity: 0.2;
+    animation-delay: -3s;
+    bottom: 0px;
+}
+@keyframes animacion1 {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1920px;
+    }
+}
+
+@media(min-width:768px){
+    .wave__wave{
+        bottom: -40px;
+        height:200px;
+    }
+}
+@media(min-width:1380px){
+    .wave__wave{
+        bottom: -100px;
+        height:300px;
+    }
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import './modules/animations.css';
+@import './modules/buttons.css';
+@import './modules/card.css';
+@import './modules/form.css';
+@import './modules/headed.css';
+@import './modules/hero.css';
+@import './modules/list.css';
+@import './modules/menu.css';
+@import './modules/section.css';
+@import './modules/wave.css';

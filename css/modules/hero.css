@@ -1,0 +1,233 @@
+.container{
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.container--elements{
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+}
+.container__copyright{
+    text-align: center;
+}
+.hero{
+    position: relative;
+    display: flex;
+    /* width: 100%;
+    height: 100vh; */
+    overflow: hidden;
+
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/img/jpg/capa1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.hero__capa-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    
+    left:0;
+    align-items: center;
+}
+.hero__capa-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/img/jpg/capa4.jpg');
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+.hero__capa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+
+}
+.hero__capa-imagenes{
+    position: relative;
+    width: 100%;
+    height: 396px;
+}
+.hero__capa-imagen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.hero__capa-slogan{    
+    margin: 100px auto;
+}
+.hero__title{
+    font-size:2rem;
+    font-family: var(--secoundary-family-text);
+    text-align: center;
+}
+
+
+.hero__capa-imagen--img1{
+    width: 350px;
+    height: 346px;
+}
+.hero__capa-imagen--img2{
+    width: 81px;
+    height: 48px;
+}
+.hero__listas-cursos-capa{
+    margin-top:2rem;
+}
+
+
+.hero__list-curso{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 200px;
+}
+.hero__title-curso{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0,25s;
+}
+.hero__form-container{
+    height: 2.5rem;
+    z-index: 15;
+}
+.hero__form{    
+    display: flex;
+}
+.hero__form-input{
+    line-height:2rem;
+    width:11rem;
+    background:none;
+    border:1px solid rgba(255,255,255, 0.5);
+    padding:0 1rem;
+    border-radius: 0.25rem 0 0 0.25rem;
+    color: white;
+}
+.hero__form-input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+.hero__form-btn{
+    background-color:white;
+    color:#c03afe;
+    font-weight: 700;
+    padding:0 1rem;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;;
+}
+
+
+
+@media(min-width:768px){
+    .hero__capa-imagenes{
+        width: 100%;
+        height: 495px;
+    }
+    .hero__capa-imagen--img1{
+        width: 400px;
+        height: 395px;
+    }
+    .hero__capa-imagen--img2{
+        width: 162px;
+        height: 96px;
+    }
+    .hero__capa-slogan{
+        margin: 150px 0;
+    }
+    .hero__title{
+        font-size:2.5rem;
+    }
+
+    .hero__listas-cursos-capa{
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 10%;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        height: 100vh;
+    }
+    .hero__list-curso{
+        margin-bottom: 5rem;
+        transform: scale(2);
+    }
+    .title--neon{
+        text-shadow: 0 0 10px #ff005b;
+    }
+    .title--neon::after{
+        content: attr(titulo);
+        position: absolute;
+        
+        top: 0;
+        left: 0;
+        padding:0 72px;
+        z-index: -1;
+        filter: blur(15px);
+    }
+    .title--neon::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:#fe3a80;
+        z-index: -2;
+        opacity: 0.5;
+        filter: blur(40px);
+
+    }
+    .title--neon::after{
+        content: attr(titulo);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding:0 72px;
+        z-index: -3;
+        filter: blur(15px);
+    }
+    .hero__form-container{
+        margin-top:1rem;
+    }
+    .hero__form-input::placeholder{
+        color: rgba(255, 255, 255, 0.5);
+    }
+    
+}
+@media(min-width:1380px){
+    .hero__capa-imagen--img1{
+        width: 500px;
+        height: 495px;
+    }
+    .hero__capa-slogan{
+        font-size:3rem;
+        margin: 200px 0;
+    }
+    .hero__form-container{
+        margin-top:3rem;
+    }
+
+}
