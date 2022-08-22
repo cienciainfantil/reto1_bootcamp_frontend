@@ -29,7 +29,7 @@
     height: 1px;
     background-color:currentColor;
     top:0.7em;
-    transform: scaleX(0);
+    transform: scaleX(1);
     
 }
 
@@ -45,7 +45,7 @@
 }
 .section__title-line:hover:before,
 .section__title-line:hover:after{
-    transform: scaleX(1);
+    transform: scaleX(0);
 }
 .section__somos{
     background-color: rgb(56, 18, 73); 
